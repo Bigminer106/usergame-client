@@ -55,19 +55,21 @@ function createSelector(id) {
   button.style.backgroundColor = "#4466CC";
   button.style.color = "#EEEEEE";
   button.id = id  ;
-  button.style.margin = "4% auto";
-  button.style.width = "80%";
-  button.style.height = "10%";
+  button.style.margin = "2% auto";
+  button.style.width = "50%";
+  button.style.height = "20%";
   button.style.display = "block";
   button.innerHTML = users[id].email;
-  button.style.fontSize = "2rem";
-  document.body.append(button);
+  button.style.fontSize = "1.5rem";
+  $(".container").append(button);
   selectors.push(button);
 }
 
 function onClick(event) {
   // console.log("Clicked ", users[event.target.id]);
+  if(event.target.id) {
   $(".output").html(users[event.target.id].email +  "<br>" +  users[event.target.id].created_at);
   let userId = users[event.target.id].id;
   loadGames("http://localhost:3000/users/"+userId+"/games");
+  }
 }
