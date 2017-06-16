@@ -1,0 +1,20 @@
+html, body {
+  background: #EEEEEE;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 100%;
+  font-family: sans-serif;
+}
+
+.output {
+  width: 50%;
+  height: 40%;
+  margin: 10px auto;
+  background: #DDDDDD;
+  color: #111111;
+  font-size: 1.5rem;
+  text-align: center;
+  overflow: auto;
+  padding: 2%;
+}
